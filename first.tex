@@ -1,0 +1,104 @@
+%% It is just an empty TeX file.
+%% Write your code here.
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+\title{Homework 1 for ECS 20}
+\author{Tamim Nekaien (915803826)}
+\date{\today}
+\maketitle
+
+This assignment was made with 
+$\heartsuit$ (and \LaTeX).
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+ 
+\section{Question 1}
+\label{sec1}
+
+\begin{center}
+  \begin{tabular}{ |c|c|c|c|c|c|c|c| }
+    \hline
+    p & q & r & $ \neg q$ & $\neg r$ & $r \Rightarrow \neg q$ & $p \wedge \neg r$ & $\neg(r \Rightarrow \neg q) \vee (p \wedge \neg r)$  \\ \hline
+    1 & 1 & 1 & 0 & 0 & 0 & 0 & 1 \\ \hline
+    1 & 1 & 0 & 1 & 0 & 1 & 1 & 1 \\ \hline
+    1 & 0 & 1 & 0 & 1 & 1 & 0 & 0 \\ \hline
+    1 & 0 & 0 & 1 & 1 & 1 & 1 & 1 \\ \hline
+    0 & 1 & 1 & 0 & 0 & 0 & 0 & 1 \\ \hline
+    0 & 1 & 0 & 1 & 0 & 1 & 0 & 0 \\ \hline
+    0 & 0 & 1 & 0 & 1 & 1 & 0 & 0 \\ \hline
+    0 & 0 & 0 & 1 & 1 & 1 & 0 & 0 \\ 
+    \hline
+  \end{tabular}
+\end{center}
+
+
+\section{Question 2}
+\label{sec2}
+
+\subsection{part 1}
+\label{sec3}
+
+\begin{center}
+  \begin{tabular}{ |c|c|c|c|c|c|c| }
+    \hline
+    p & q & r & $p \Rightarrow q$ & $(p \Rightarrow q) \Rightarrow r$ & $q \Rightarrow r$ & $p \Rightarrow (q \Rightarrow r)$  \\ \hline
+    1 & 1 & 1 & 1 & 1 & 1 & 1 \\ \hline
+    1 & 1 & 0 & 1 & 0 & 0 & 0 \\ \hline
+    1 & 0 & 1 & 0 & 1 & 1 & 1 \\ \hline
+    1 & 0 & 0 & 0 & 1 & 1 & 1 \\ \hline
+    0 & 1 & 1 & 1 & 1 & 1 & 1 \\ \hline
+    0 & 1 & 0 & 1 & 0 & 0 & 1 \\ \hline
+    0 & 0 & 1 & 1 & 1 & 1 & 1 \\ \hline
+    0 & 0 & 0 & 1 & 0 & 1 & 1 \\ 
+    \hline
+  \end{tabular}
+\end{center}
+
+The two statements are not equal.
+\subsection{part 2}
+\label{sec4}
+\begin{enumerate}
+    \item $(q \wedge (p \Rightarrow \neg q)) \Rightarrow \neg p \longrightarrow $ Original statement.
+    \item $(q \wedge (\neg p \vee \neg q)) \Rightarrow \neg p \longrightarrow $ Implication into not and or.
+    \item $(q \wedge \neg p) \vee (q \wedge \neg q) \Rightarrow \neg p \longrightarrow$ Distributive property.
+    \item $(q \wedge \neg p) \vee (F) \Rightarrow \neg p \longrightarrow$ Converting to falsehoods.
+    \item $(q \wedge \neg p) \Rightarrow \neg p \longrightarrow$ False or statement is just statement.
+    \item $\neg(q \wedge \neg p) \vee \neg p \longrightarrow$ Implication into not and or.
+    \item $(\neg q \vee p) \vee \neg p \longrightarrow$ De Morgan's law.
+    \item $\neg q \vee (p \vee \neg p) \longrightarrow$ Associative Property.
+    \item $\neg q \vee (T) \longrightarrow$ Converting to Truth
+    \item $(T) \longrightarrow$ Truth or anything is just truth.
+\end{enumerate}
+
+\section{Question 3}
+\label{sec5}
+
+\subsection{part 1}
+\label{sec6}
+As an implication: If the weather changed very rapidly, then a tornado would have touched down on Davis last week.
+\subsection{part 2}
+\label{sec7}
+As a converse: If a tornado touched down on Davis last week, then the weather has changed very rapidly.
+\subsection{part 3}
+\label{sec9}
+As a contrapositive: If a tornado didn't touch down on Davis last week, then the weather isn't changing rapidly.
+\section{Question 4}
+\label{sec8}
+
+\begin{center}
+  \begin{tabular}{ |c|c|c|c|c| }
+    \hline
+    A & B & B is a knave & One is a knight & Consistent?  \\ \hline
+    Knight & Knave & True & True & Not possible  \\ \hline
+    Knave & Knight & False & True & Possible  \\ 
+    \hline
+  \end{tabular}
+\end{center}
+A is a Knave and B is a Knight.
+\section{Answers}
+My answer for \ref{sec1} , \ref{sec2} , \ref{sec3} , \ref{sec4} , \ref{sec5} , \ref{sec6} , \ref{sec7} ,\ref{sec9}, \ref{sec8} are on pages \pageref{sec1} and \pageref{sec7}.
+
+
+\end{document}

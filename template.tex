@@ -1,0 +1,90 @@
+% This is a template resource for students that want to start right away with LaTeX with a simple guiding template
+% links for resources (copy and paste in search bar): 
+
+% General coverage of everything: http://mirrors.ibiblio.org/CTAN/info/lshort/english/lshort.pdf
+% More on Tables:  https://en.wikibooks.org/wiki/LaTeX/Tables
+% Math symbols: https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols
+% Editor: http://papeeria.com/
+% Editor: https://www.overleaf.com/
+
+% Note: the \ signals to Tex that there is an element being used, the $ is put before and after math elements to signify math type.
+
+\documentclass[a4paper,12pt]{article} % signifies type of document (no need to change this)
+\usepackage{newtxtext} % TEx has it's own library, include as many packages as you want here
+\usepackage{newtxmath}
+
+\begin{document} % start of a document (no need to change this)
+
+\title{Homework \# for ECS 20} % Title (change the #)
+\author{Joe Kerr (ID:)} % Name of "homework-doer" (change the name and number)
+\date{\today} % start of a document (no need to change this)
+\maketitle % tells LaTeX to do everything above.
+
+This assignment was made with \LaTeX. % Leave this here
+
+\pagenumbering{roman} % You can change this to arabic if you want
+\tableofcontents % This creates a table of contents for your homework problems
+
+\newpage % Basically page break
+ 
+\section{Question 1} % Organize homework questions into sections
+\label{sec1} % Label and name it to reference for later
+
+\begin{center} % We are creating a table now
+  \begin{tabular}{ |c|c|c|c| } % the c stands for center of cell, the | serves as a colunn divider
+    \hline % row divider
+    p & q & r & $ \neg q$ \\ \hline 
+    T & T & T & F  \\ \hline % The & signals to Tex to move on to next column
+    T & T & F & F  \\ \hline
+    T & F & T & T  \\ \hline
+    T & F & F & T  \\ \hline % Use ctrl+click multiple lines to edit multiple lines at once
+    F & T & T & F  \\ \hline
+    F & T & F & F  \\ \hline
+    F & F & T & T  \\ \hline
+    F & F & F & T  \\ 
+    \hline
+  \end{tabular} % Closes everything off
+\end{center}
+
+
+\section{Question 2} 
+\label{sec2}
+
+\subsection{part 1} % This is in case you get a two-part Question.
+\label{sec3}
+
+\subsection{part 2}
+\label{sec4}
+\begin{enumerate} % Creates numbered list for proofs and algebra steps for a problem.
+    \item $(q \wedge (p \Rightarrow \neg q)) \Rightarrow \neg p \longrightarrow $ Original statement. % item is a new list element
+    \item $(T) \longrightarrow$ Truth or (something) is Truth.
+\end{enumerate}
+
+\section{Question 3}
+\label{sec5}
+
+\subsection{part 1}
+\label{sec6}
+Modus Ponens
+ $\begin{array}{rl} % arrays for modus ponens
+    & p \to q\\
+    & p \\
+    \cline{2-2}
+    \therefore & q
+  \end{array}$
+
+\subsection{part 2}
+\label{sec7}
+
+\subsection{part 3}
+\label{sec9}
+
+\section{Question 4}
+\label{sec8}
+
+
+\section{Answers}
+My answer for \ref{sec1} , \ref{sec2} , \ref{sec3} , \ref{sec4} , \ref{sec5} , \ref{sec6} , \ref{sec7} ,\ref{sec9}, \ref{sec8} is on page \pageref{sec1}. % This is how you reference the number that the questions are and page numbers too
+
+
+\end{document}

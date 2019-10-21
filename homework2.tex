@@ -1,0 +1,104 @@
+%% It is just an empty TeX file.
+%% Write your code here.
+\documentclass[a4paper,12pt]{article}
+\begin{document}
+\title{Homework 2 for ECS 20}
+\author{Tamim Nekaien (915803826)}
+\date{\today}
+\maketitle
+
+This assignment was made with 
+$\heartsuit$ (and \LaTeX).
+
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+ 
+\section{Question 1}
+\label{sec1}
+
+
+\subsection{Part 1}
+\label{sec2}
+The first statement is true because the set of nonnegative integers starts with 0 and 0 is equal to or less than said set.
+\subsection{Part 2}
+\label{sec3}
+The second statement is false because for a said integer n, there will be an integer m that is greater than the one integer n given.
+\subsection{Part 3}
+\label{sec4}
+The third statement is true because for all given integer m(s) there can be an integer n that is greater than that one individual m in the spanning set of multiple m(s).
+
+\section{Question 2}
+\label{sec5}
+
+The satement is not valid (Not a Tautology)
+\begin{center} % We are creating a table now
+  \begin{tabular}{ |c|c|c|c|c|c|c|c| } % the c stands for center of cell, the | serves as a colunn divider
+    \hline % row divider
+    p & q & r & $\neg r$ & $p \to r$ & $q \to r$ & $\neg(p \vee q)$ & $((p \to r) \wedge (q \to r) \wedge (\neg(p \vee q))) \to \neg r$  \\ \hline
+    T & T & T & F & T & T & F & T \\ \hline % The & signals to Tex to move on to next column
+    T & T & F & T & F & F & F & T \\ \hline
+    T & F & T & F & T & T & F & T \\ \hline
+    T & F & F & T & F & T & F & T \\ \hline % Use ctrl+click multiple lines to edit multiple lines at once
+    F & T & T & F & T & T & F & T \\ \hline
+    F & T & F & T & T & T & F & T \\ \hline
+    F & F & T & F & T & T & T & F \\ \hline
+    F & F & F & T & T & T & T & T \\ 
+    \hline
+  \end{tabular} % Closes everything off
+\end{center}
+
+
+\section{Question 3}
+\label{sec6}
+
+\subsection{part 1}
+\label{sec7}
+
+There is a course = $\exists y$ \\
+Every freshman = $\forall x \in F(x)$ \\
+Taking the class = $T(x,y)$ \\
+$\exists y \forall x [F(x) \to T(x,y)]$ \\
+
+\subsection{part 2}
+\label{sec8}
+
+No student = $\exists x$ \\
+That is a Freshman is also Sophomore = $F(x) \wedge S(x)$ \\
+Negate statement for final result \\
+$\neg(\exists x [F(x) \wedge S(x)])$ \\
+
+\subsection{part 3}
+\label{sec9}
+
+Some student = $\exists x$ \\
+Some course = $\exists y$ \\
+Taking course = $T(x,y)$ \\
+Some freshman is in advanced course and is taking it. \\
+$\exists x \exists y [F(x) \wedge A(y) \wedge T(x,y)]$ \\
+
+\section{Question 4}
+\label{sec10}
+
+p = math major
+q = CS major
+r = Discrete
+s = smart
+
+ $\begin{array}{rl} % arrays for modus ponens
+    & p \vee q\\
+    & \neg r \to \neg p \\
+    & r \to s \\
+    & \neg q \\
+    & p \longrightarrow$ p or q and not q is p \\
+    & $r \longrightarrow$ modus tollens of (not r implies not p, then p, therefore r)\\
+    & $s \longrightarrow$ modus ponens of p implies s , p therefore s \\
+    $\cline{2-2}
+    \therefore & s 
+  \end{array}$
+
+\section{Answers}
+My answer for \ref{sec1} , \ref{sec2} , \ref{sec3} , \ref{sec4} , \ref{sec5} , \ref{sec6} , \ref{sec7} ,\ref{sec8}, \ref{sec9}, \ref{sec10} are on pages \pageref{sec1} and \pageref{sec9}.
+
+
+\end{document}
